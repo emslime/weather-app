@@ -1,0 +1,112 @@
+.container {
+  background-image: linear-gradient(
+    225deg,
+    #ffe29f 0%,
+    #ffa99f 48%,
+    #ff719a 100%
+  );
+  border-radius: 6px;
+  position: relative;
+  max-width: 700px;
+  top: 100px;
+}
+
+#grey-border {
+  background: #2b2b28;
+}
+
+#gradient-body {
+  margin: -11px;
+  background-image: linear-gradient(
+    -225deg,
+    #ffe29f 0%,
+    #ffa99f 48%,
+    #ff719a 100%
+  );
+}
+
+body {
+  font-family: "PT Mono", monospace;
+  color: #2b2b28;
+  background: #2b2b28;
+}
+
+.search-bar {
+  max-width: 85%;
+  margin-left: 100px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  transition: all 150ms ease-in-out;
+}
+#search-button {
+  margin-left: 100px;
+}
+#current-location-button {
+  margin-left: 0;
+}
+
+.currently,
+.detail {
+  background: #f8dc81;
+  max-width: 80%;
+  border: none;
+}
+
+.currently {
+  margin-left: 40px;
+  text-align: center;
+  padding-top: 18px;
+}
+
+.detail {
+  padding-top: 6px;
+  padding-left: 8px;
+  margin-left: 15px;
+  text-align: center;
+}
+
+#weather-type {
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-top: 19px;
+}
+
+.location {
+  font-size: 20px;
+  font-weight: bold;
+}
+.today {
+  font-size: 18px;
+}
+.current-temp {
+  font-weight: bold;
+}
+.fahrenheit-link,
+.celsius-link {
+  text-decoration: none;
+  color: #2b2b28;
+}
+
+.weekdays-icons {
+  background: transparent;
+}
+
+.weekdaysBox {
+  background: transparent;
+  border: 2px solid #2b2b28;
+  top: 20px;
+  margin-bottom: 20px;
+}
+
+.week {
+  color: #2b2b28;
+  text-align: center;
+}
+
+i {
+  font-size: 60px;
+  color: #f8dc81;
+}
