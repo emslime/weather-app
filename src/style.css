@@ -110,3 +110,15 @@ i {
   font-size: 60px;
   color: #f8dc81;
 }
+#coded-by {
+  display: block;
+  margin: 0 auto;
+  text-align: right;
+  font-size: 10px;
+  margin-bottom: -15px;
+}
+
+#git-link:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
