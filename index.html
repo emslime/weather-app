@@ -28,76 +28,40 @@
       <div class="card" id="grey-border">
         <div class="card-body">
           <div class="card" id="gradient-body">
-            <div class="card-body">
-              <form id="search-form">
-                <div class="row">
-                  <div class="col">
-                    <input
-                      type="text"
-                      placeholder="Start here..."
-                      class="form-control search-bar"
-                      id="city-input"
-                      autocomplete="off"
-                      autofocus="on"
-                    />
-                  </div>
-                  <div class="col">
-                    <input
-                      type="submit"
-                      value="Search"
-                      class="btn btn-outline-dark"
-                      id="search-button"
-                    />
-                  </div>
-                  <div class="col">
-                    <input
-                      type="submit"
-                      value="Current"
-                      class="btn btn-outline-dark"
-                      id="current-location-button"
-                    />
-                  </div>
-                </div>
-              </form>
+            <form id="search-form" class="mb-3">
               <div class="row">
-                <div class="col">
-                  <div class="card currently">
-                    <div class="card-body">
-                      <h5 class="current-temp">
-                        <img src="" alt="" id="icon" class="float-left" />
-                        <span class="current-temperature" id="current-temp"
-                          >666</span
-                        >
-                        <a href="#" class="fahrenheit-link active" id="fahrenheit-link"
-                          >°F</a
-                        >
-                        <span class="celsius"
-                          >|<a href="#" class="celsius-link" id="celsius-link"
-                            >°C</a
-                          ></span
-                        >
-                      </h5>
-                      <h3 id="weather-type">Sunny</h3>
-                    </div>
-                  </div>
+                <div class="col-6">
+                  <input
+                    type="search"
+                    placeholder="Enter a city ..."
+                    class="form-control"
+                    id="city-input"
+                    autofocus="on"
+                    autocomplete="off"
+                  />
                 </div>
-                <div class="col">
-                  <div class="card detail">
-                    <div class="card-body">
-                      <h1 class="location" id="location">Earth</h1>
-                      <h6 class="today">
-                        <span id="user-day">Saturday</span
-                        ><span id="user-time"> 6:00PM</span>
-                      </h6>
-                      <ul id="weather-conditions">
-                        <li>Humidity: <span id="humidity"></span>%</li>
-                <li>Wind: <span id="wind"></span> km/h</li>
-              </ul></li>
-                      </ul>
-                    </div>
-                  </div>
+                <div class="col-2">
+                  <input
+                    type="submit"
+                    value="Search"
+                    class="btn btn-outline-light w-85"
+                  />
+                </div>
+                <div class="col-2">
+                  <input
+                    type="submit"
+                    value="Current"
+                    class="btn btn-outline-light"
+                    id="current-location-button"
+                  />
                 </div>
               </div>
+            </form>
+            <div class="overview">
+              <h1 id="city">Cincinnati</h1>
+              <ul>
+                <li>Last updated:<span id="date"></span></li>
+              </ul>
             </div>
           </div>
         </div>
