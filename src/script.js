@@ -21,7 +21,7 @@ if (minute < 10) {
 }
 
 let h6 = document.querySelector("h6.today");
-h6.innerHTML = `${day} ${hour}:${minute}<br />`;
+h6.innerHTML = `${day} ${hour}:${minute}`;
 
 function search(event) {
   event.preventDefault();
@@ -30,7 +30,7 @@ function search(event) {
   cityElement.innerHTML = cityInput.value;
 
   let city = cityInput.value;
-  let units = "imperial";
+  let units = "metric";
   let apiKey = "db51b5a53faf37133eab9327ddad8802";
   let apiEndpoint = "https://api.openweathermap.org/data/2.5/weather";
   let apiUrl = `${apiEndpoint}?q=${city}&appid=${apiKey}&units=${units}`;
@@ -56,7 +56,7 @@ function showWeather(response) {
 function showGeoResults(position) {
   let lat = position.coords.latitude;
   let lon = position.coords.longitude;
-  let units = "imperial";
+  let units = "metric";
   let apiKey = "db51b5a53faf37133eab9327ddad8802";
   let apiEndpoint = "https://api.openweathermap.org/data/2.5/weather";
   let apiUrlGeo = `${apiEndpoint}?lat=${lat}&lon=${lon}&appid=${apiKey}&units=${units}`;

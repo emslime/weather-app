@@ -79,6 +79,7 @@ i {
 .current-temp {
   font-weight: bold;
 }
+
 .fahrenheit-link,
 .celsius-link {
   text-decoration: none;
