@@ -4,6 +4,21 @@ body {
   background: #2b2b28;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li::first-letter {
+  text-transform: capitalize;
+}
+
 i {
   font-size: 60px;
   color: #f8dc81;
@@ -55,10 +70,12 @@ i {
 .location {
   font-size: 20px;
   font-weight: bold;
+  margin-top: -10px;
 }
 .today {
-  font-size: 18px;
+  font-size: 16px;
 }
+
 .current-temp {
   font-weight: bold;
 }
@@ -111,9 +128,14 @@ i {
 }
 
 #weather-type {
-  font-size: 15px;
+  font-size: 20px;
   text-transform: capitalize;
   margin-top: 15px;
+}
+
+#weather-conditions {
+  font-size: 14px;
+  text-decoration: none;
 }
 
 #coded-by {

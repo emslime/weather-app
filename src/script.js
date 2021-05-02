@@ -8,23 +8,9 @@ let days = [
   "Friday",
   "Saturday",
 ];
-let months = [
-  "January",
-  "February",
-  "March",
-  "April",
-  "May",
-  "June",
-  "July",
-  "August",
-  "September",
-  "October",
-  "November",
-  "December",
-];
+
 let day = days[now.getDay()];
-let month = months[now.getMonth()];
-let date = now.getDate();
+
 let hour = now.getHours();
 let minute = now.getMinutes();
 if (hour < 10) {
@@ -35,7 +21,7 @@ if (minute < 10) {
 }
 
 let h6 = document.querySelector("h6.today");
-h6.innerHTML = `${day} ${hour}:${minute}<br />${month} ${date}`;
+h6.innerHTML = `${day} ${hour}:${minute}<br />`;
 
 function search(event) {
   event.preventDefault();
