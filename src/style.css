@@ -68,7 +68,7 @@ i {
 }
 
 .location {
-  font-size: 20px;
+  font-size: 19px;
   font-weight: bold;
   margin-top: -10px;
 }
@@ -129,8 +129,11 @@ i {
 
 #weather-type {
   font-size: 20px;
-  text-transform: capitalize;
   margin-top: 15px;
+}
+
+#weather-type::first-letter {
+  text-transform: capitalize;
 }
 
 #weather-conditions {
