@@ -47,6 +47,11 @@ body {
   margin-left: 0;
 }
 
+#result-icon {
+  color: #2b2b28;
+  font-size: 30px;
+}
+
 .currently,
 .detail {
   background: #f8dc81;
@@ -69,9 +74,8 @@ body {
 
 #weather-type {
   font-size: 15px;
-  font-weight: bold;
   text-transform: capitalize;
-  margin-top: 19px;
+  margin-top: 15px;
 }
 
 .location {
