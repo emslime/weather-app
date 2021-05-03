@@ -58,6 +58,7 @@ img {
 .weather-temperature .active {
   color: #fff;
   cursor: default;
+  text-decoration: none;
 }
 
 .weather-temperature .active:hover {
