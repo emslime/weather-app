@@ -76,6 +76,24 @@ function displayCelsiusTemperature(event) {
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
 
+function displayGeoResults(position) {
+  let latitude = position.coords.latitude;
+  let longitude = position.coords.longitude;
+  let apiKey = "db51b5a53faf37133eab9327ddad8802";
+  let apiUrlGeo = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
+
+  axios.get(apiUrlGeo).then(displayTemperature);
+}
+
+function clickGeoLocation(event) {
+  event.preventDefault();
+  getGeoLocation();
+}
+
+function getGeoLocation() {
+  navigator.geolocation.getCurrentPosition(displayGeoResults);
+}
+
 let celsiusTemperature = null;
 
 let form = document.querySelector("#search-form");
@@ -86,4 +104,8 @@ fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
-search("Cincinnati");
+
+let currentLocation = document.querySelector("#current-location-button");
+currentLocation.addEventListener("click", clickGeoLocation);
+
+search("Geneva");
