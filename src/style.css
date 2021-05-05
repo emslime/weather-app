@@ -89,6 +89,11 @@ img {
   opacity: 0.3;
 }
 
+#celsius-link,
+#fahrenheit-link {
+  text-decoration: none;
+}
+
 #conditions {
   margin-top: 10px;
 }
