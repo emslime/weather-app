@@ -65,6 +65,30 @@ img {
   text-decoration: none;
 }
 
+.forecast {
+  max-width: 94.5%;
+  margin-left: 16px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.forecast-day {
+  font-size: 13px;
+  opacity: 0.5;
+}
+
+.forecast-temperatures {
+  font-size: 11px;
+}
+
+.forecast-temp-max{
+  opacity: 0.5;
+}
+
+.forecast-temp-min {
+  opacity: 0.3;
+}
+
 #conditions {
   margin-top: 10px;
 }
@@ -86,6 +110,11 @@ img {
     rgb(47, 48, 67) 68.2%,
     rgb(27, 23, 36) 99.1%
   );
+}
+
+#forecast-icon {
+  margin-top: 0;
+  margin-right: 12px;
 }
 
 #coded-by {
