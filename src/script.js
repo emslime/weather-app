@@ -92,6 +92,8 @@ function displayImperial(event) {
   celsiusLink.classList.remove("active");
   fahrenheitLink.classList.add("active");
   temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
+  let unitType = document.querySelector("#unit-type");
+  unitType.innerHTML = "mph";
 }
 
 function displayMetric(event) {
@@ -101,6 +103,8 @@ function displayMetric(event) {
   celsiusLink.classList.add("active");
   let celsiusTemperature = ((fahrenheitTemperature - 32) * 5) / 9;
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
+  let unitType = document.querySelector("#unit-type");
+  unitType.innerHTML = "km/h";
 }
 
 function displayGeoResults(position) {
