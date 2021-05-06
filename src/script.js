@@ -59,12 +59,13 @@ function displayTemperature(response) {
   let iconElement = document.querySelector("#icon");
 
   fahrenheitTemperature = response.data.main.temp;
+  windSpeed = response.data.wind.speed;
 
   temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
   cityElement.innerHTML = response.data.name;
   descriptionElement.innerHTML = response.data.weather[0].description;
   humidityElement.innerHTML = response.data.main.humidity;
-  windElement.innerHTML = Math.round(response.data.wind.speed);
+  windElement.innerHTML = Math.round(windSpeed);
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
   iconElement.setAttribute(
     "src",
@@ -94,6 +95,8 @@ function displayImperial(event) {
   temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
   let unitType = document.querySelector("#unit-type");
   unitType.innerHTML = "mph";
+  let windElement = document.querySelector("#wind");
+  windElement.innerHTML = Math.round(windSpeed);
 }
 
 function displayMetric(event) {
@@ -105,6 +108,8 @@ function displayMetric(event) {
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
   let unitType = document.querySelector("#unit-type");
   unitType.innerHTML = "km/h";
+  let windElement = document.querySelector("#wind");
+  windElement.innerHTML = Math.round(windSpeed * 1.609);
 }
 
 function displayGeoResults(position) {
@@ -126,6 +131,7 @@ function getGeoLocation() {
 }
 
 let fahrenheitTemperature = null;
+let windSpeed = null;
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
