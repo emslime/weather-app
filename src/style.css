@@ -126,15 +126,17 @@ img {
   color: #fff;
   display: block;
   text-align: right;
-  font-size: 10px;
+  font-size: 9px;
   margin-top: 2px;
   margin-bottom: -16px;
 }
 
-#git-link {
+#git-link,
+#host {
   color: #fff;
 }
-#git-link:hover {
+#git-link:hover,
+#host:hover {
   cursor: pointer;
   color: rgb(156, 116, 129);
 }
