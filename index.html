@@ -40,25 +40,29 @@
                   <input
                     type="submit"
                     value="Search"
-                    class="btn btn-outline-light w-85"
+                    class="btn btn-outline-light"
+                    id="search-button"
                   />
                 </div>
                 <div class="col-2">
                   <input
                     type="submit"
-                    value="Current"
-                    class="btn btn-outline-light w-85"
+                    value="Current Location"
+                    class="btn btn-outline-light"
                     id="current-location-button"
                   />
                 </div>
               </div>
             </form>
             <div class="overview">
-              <h1 id="city"></h1>
-              <ul>
-                <li id="date">Friday 05:00</li>
-                <li id="description"></li>
-              </ul>
+              <div class="row">
+                <div class="col-6">
+                  <h1 id="city"></h1>
+                </div>
+                <div class="col-6">
+                  <p id="date"></p>
+                </div>
+              </div>
             </div>
             <div class="row">
               <div class="col-6">
@@ -77,6 +81,7 @@
               </div>
               <div class="col-6">
                 <ul id="conditions">
+                  <li id="description"></li>
                   <li>Humidity: <span id="humidity"></span>%</li>
                   <li>
                     Wind: <span id="wind"></span>

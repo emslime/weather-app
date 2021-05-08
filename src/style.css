@@ -5,28 +5,22 @@ body {
 }
 
 form {
-  margin-top: 16px;
-  margin-left: 32px;
+  margin-top: 26px;
 }
 
 h1 {
-  margin-left: 32px;
-  font-size: 33px;
+  margin-top: 16px;
+  margin-left: 50px;
+  font-size: 30px;
 }
 
 li {
   list-style: none;
-  font-size: 16px;
-  font-weight: 100;
+  font-size: 13px;
 }
 
 li::first-letter {
   text-transform: capitalize;
-}
-
-img {
-  margin-left: 5px;
-  margin-top: -30px;
 }
 
 .container {
@@ -43,6 +37,10 @@ img {
   top: 85px;
 }
 
+.weather-temperature {
+  margin-left: 62px;
+}
+
 .weather-temperature strong {
   font-weight: 400;
   font-size: 50px;
@@ -51,8 +49,8 @@ img {
 
 .weather-temperature .units {
   position: relative;
-  font-size: 16px;
-  top: -25px;
+  font-size: 12px;
+  top: -28px;
 }
 
 .weather-temperature .active {
@@ -68,6 +66,7 @@ img {
 .forecast {
   max-width: 94.5%;
   margin-left: 16px;
+
   margin-bottom: 16px;
   text-align: center;
 }
@@ -82,11 +81,35 @@ img {
 }
 
 .forecast-temp-max {
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 .forecast-temp-min {
-  opacity: 0.3;
+  opacity: 0.4;
+}
+
+#date {
+  margin-top: 20px;
+  margin-left: 48px;
+  font-size: 21px;
+}
+
+#search-button {
+  margin-left: 32px;
+}
+
+#current-location-button {
+  margin-left: 32px;
+  margin-top: 6px;
+  font-size: 9px;
+}
+
+#icon {
+  margin-top: -30px;
+}
+
+#forecast-icon {
+  margin-left: 10px;
 }
 
 #celsius-link,
@@ -95,10 +118,13 @@ img {
 }
 
 #conditions {
-  margin-top: 10px;
+  opacity: 75%;
+  margin-left: 32px;
+  margin-right: 8px;
 }
 
 #city-input {
+  margin-left: 38px;
   opacity: 60%;
 }
 
